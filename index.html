@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Bread Search</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Pacifico|Satisfy|Stoke|Yellowtail|Geo|Oswald|Lobster" rel="stylesheet" type="text/css" />
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+
+<!-- 検索ボックス -->
+<div class="searchBox">
+  <h1>Daily Schedule</h1>
+
+  <!-- 入力欄 -->
+  <div class="inputBox">
+    <h2>今日の曜日は？</h2>
+    <input type="text" class="inputText">
+    <input type="button" value="検索" class="inputButton" onclick="clickButton()">
+  </div><!-- /.inputBox -->
+
+  <!-- 出力欄 -->
+  <div class="outputBox">
+    <h2>時間割</h2>
+
+    <!-- 表 -->
+    <table>
+      <tr>
+        <th>8:30 - 11:30</th>
+        <td class="outputText1"></td>
+      </tr>
+      <tr>
+        <th>12:30 - 15:15</th>
+        <td class="outputText2"></td>
+      </tr>
+      <tr>
+        <th>15:30 - 18:15</th>
+        <td class="outputText3"></td>
+      </tr>
+      <tr>
+        <th>19:00 - 21:45</th>
+        <td class="outputText4"></td>
+      </tr>
+      <tr>
+        <th>その他</th>
+        <td class="outputText5"></td>
+      </tr>
+    </table>
+
+  </div><!-- /.outputBox -->
+
+</div><!-- /.searchBox -->
+
+<!-- JavaScriptと連携する -->
+<script src="script.js"></script>
